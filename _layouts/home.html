@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+	{% include nav.html %}
+
+	<div class="wrapper">
+		<section>
+			<div id="title">
+				<h1>{{ site.title | default: site.github.repository_name }}</h1>
+				<p>{{ site.description | default: site.github.project_tagline }}</p>
+			</div>
+
+			<hr>
+
+			{% assign recent_post = site.posts.first %}
+			<div>
+				<h1 style="text-align: center">Most Recent Post</h1>
+				<h2>
+					<a href="{{ recent_post.url }}">{{ recent_post.title | default: "No posts yet..." }}</a>
+				</h2>
+
+				<p>{{ recent_post.description | default: "" }}</p>
+				
+				<p style="text-align: right">Published {{ recent_post.date | date: "%B %-d, %Y" }}</p>
+				<hr>
+			</div>
+
+			{{ content }}
+
+		</section>
+	</div>
+
+	{% include google_analytics.html %}
+</body>
+
+</html>

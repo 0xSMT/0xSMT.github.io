@@ -1,0 +1,23 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+#header nav li a {
+    background-color: #bd2020;
+    border: 1px solid #4b1919;
+}
+
+#header nav li a:hover {
+    background-color: #da2525;
+    border: 1px solid #301010;
+}
+
+#header {
+    background: #ac4646;
+    border-bottom: 4px solid #8b2b2b;
+}
+
+section #title {
+    margin: 0 0 10px 0;
+}

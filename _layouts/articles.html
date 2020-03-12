@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include nav.html %}
+
+    <div class="wrapper">
+        <section>
+            <div id="title">
+                <h1>{{ page.title | default: site.github.repository_name }}</h1>
+                <p>{{ page.description | default: site.github.project_tagline }}</p>
+                <hr>
+            </div>
+
+            {% for post in site.posts %}
+                <div>
+                    <h2>
+                        <a href="{{ post.url }}">{{ post.title | default: site.github.repository_name }}</a>
+                    </h2>
+
+                    <p>{{ post.description | default: site.github.project_tagline }}</p>
+                    
+                    <p style="text-align: right">Published {{ page.date | date: "%B %-d, %Y" }}</p>
+                    <hr>
+                </div>
+            {% endfor %}
+            
+        </section>
+    </div>
+
+    {% include google_analytics.html %}
+</body>
+
+</html>
