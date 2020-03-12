@@ -18,11 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Samuel Taylor Blog
+title: Samuel Taylor's Personal Website
 email: 0xSMT97@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal blog for Samuel Taylor, a student of cognitive and computer sciences. 
-  Serves as a repository for his code, articles, and other publishable content.
+  Computer Science, Psychology, Neuroscience, Linguistics, and Literature.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "0xSMT.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 0xSMT

@@ -15,9 +15,37 @@
 
 #header {
     background: #ac4646;
-    border-bottom: 4px solid #8b2b2b;
+    // border-bottom: 4px solid #8b2b2b;
+    border-bottom: 2px solid white;
+
 }
 
 section #title {
     margin: 0 0 10px 0;
+}
+
+#footer nav {
+    // max-width: 650px;
+    align-content: center;
+    text-align: center;
+}
+
+#footer nav li {
+    display: inline;
+    list-style: none;
+    align-items: center;
+    padding: 30px;
+}
+
+#footer nav li a {
+    display: inline-block;
+    text-align: center;
+}
+
+#newpost {
+    background-color: #252020; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
 }
