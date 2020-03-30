@@ -49,3 +49,25 @@ section #title {
     padding-top: 10px; 
     padding-bottom: 10px;
 }
+
+ol ol {
+    margin: 0 0 0 0; 
+}
+
+ol ul {
+    margin: 0 0 0 0;
+}
+
+ul ol {
+    margin: 0 0 0 0;
+}
+
+ul ul {
+    margin: 0 0 0 0;
+}
+
+@media print, screen and (max-width: 480px) { 
+  #header { margin-top: 0px; }
+  section { margin-top: 60px; }
+  nav { display: block; } 
+}

@@ -24,7 +24,7 @@
 
                     <p>{{ post.description | default: site.github.project_tagline }}</p>
                     
-                    <p style="text-align: right">Published {{ page.date | date: "%B %-d, %Y" }}</p>
+                    <p style="text-align: right">Published {{ post.date | date: "%B %-d, %Y" }}</p>
                     <hr>
                 </div>
             {% endfor %}
