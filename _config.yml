@@ -21,7 +21,7 @@
 title: Samuel Taylor's Personal Website
 email: 0xSMT97@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Computer Science, Psychology, Neuroscience, Linguistics, and Literature.
+  Computation, Psychology, Neuroscience, Linguistics, Literature
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "0xSMT.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 0xSMT
