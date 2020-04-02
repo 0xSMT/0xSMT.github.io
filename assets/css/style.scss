@@ -17,7 +17,17 @@
     background: #ac4646;
     // border-bottom: 4px solid #8b2b2b;
     border-bottom: 2px solid #da8585;
+}
 
+.framed {
+    border: 8px solid #ac4646;
+    border-radius: 6px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    box-shadow: 0 0 1px 1px #000000
 }
 
 section #title {
