@@ -81,3 +81,12 @@ ul ul {
   section { margin-top: 60px; }
   nav { display: block; } 
 }
+
+h2::before, h1::before, h3::before, h4::before, .anchor { 
+    display: block; 
+    content: " "; 
+    margin-top: -80px; 
+    height: 80px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
