@@ -42,7 +42,7 @@ plugins:
 #
 exclude:
   - in_progress/
-  - management/
+  - util/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

@@ -27,7 +27,21 @@
 
             {{ content }}
 
+            <p style="text-align: right; font-size: 24px">☐</p>
         </section>
+
+        <!-- <hr> -->
+
+        {% if page.references.size > 0 %}
+            <h1>References</h1>
+
+            <ul>
+                {% for ref in page.references %}
+                    <li>{{ref}}</li>
+                {% endfor %}
+            </ul>
+
+        {% endif %}
     </div>
 
     {% include footer.html %}

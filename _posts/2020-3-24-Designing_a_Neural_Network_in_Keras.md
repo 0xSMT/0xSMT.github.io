@@ -4,7 +4,6 @@ title: 'Designing a Neural Network in Keras'
 date: 2020-03-24 16:38:02 -0500
 description: 'Discusses the appropriate questions to ask and steps to take in designing and implementing a neural network in Keras for a given problem. Includes a a toy example implementation regarding sentiment analysis. Emphasis on dense, convolutional, and recurrent neural networks, with particular implementation focus on recurrent LSTM networks.'
 tags: computing
-hasmath: true
 ---
 
 ## Table of Contents
@@ -305,7 +304,7 @@ model = Sentiment.build(128, 1000, 500, 200)
 
 # Displays a summary of model configuration
 model.summary()
-input("Press enter to coninue...")
+input("Press enter to continue...")
 
 # Compile the model (assign its optimizer and loss function)
 model.compile(
@@ -344,7 +343,7 @@ A good idea is to introduce dropout layers! Dropout layers are not so much layer
 
 ### Takes a long time to train
 
-Reduce the number of layers and number of neurons in the layers! This is a tuning process, and there's no particular science to it (as with much of neural network design). Ttry reducing the layers slowly, and see how much performance degrades. In fact, start with as few neurons and layers as you think might work. When that fails (but quickly), slowly add more complexity: more layers, more neurons. Do this until an acceptable accuracy occurs. This method is preferable than starting with a complex network and trimming it. Otherwise, you would wait a long time training a network that might not work at all anyway.
+Reduce the number of layers and number of neurons in the layers! This is a tuning process, and there's no particular science to it (as with much of neural network design). Try reducing the layers slowly, and see how much performance degrades. In fact, start with as few neurons and layers as you think might work. When that fails (but quickly), slowly add more complexity: more layers, more neurons. Do this until an acceptable accuracy occurs. This method is preferable than starting with a complex network and trimming it. Otherwise, you would wait a long time training a network that might not work at all anyway.
 
 ### Otherwise...
 
