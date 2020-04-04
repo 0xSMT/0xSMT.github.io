@@ -11,18 +11,19 @@
     <div class="wrapper">
         <section>
             <div id="title">
-                <h1>{{ page.title | default: site.github.repository_name }}</h1>
-                <p>{{ page.description | default: site.github.project_tagline }}</p>
+                <h1>Posts in {{page.tag | capitalize}}</h1>
                 <hr>
             </div>
 
             <!-- For each published post -->
             {% for post in site.posts %}
-                <div>
-                    {% include postbox.html %}
-                    
-                    <hr>
-                </div>
+                {% if post.tags contains page.tag %}
+                    <div>
+                        {% include postbox.html %}
+                        
+                        <hr>
+                    </div>
+                {% endif %}
             {% endfor %}
             
         </section>

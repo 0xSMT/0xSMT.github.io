@@ -3,7 +3,7 @@ layout: post
 title: 'Designing a Neural Network in Keras'
 date: 2020-03-24 16:38:02 -0500
 description: 'Discusses the appropriate questions to ask and steps to take in designing and implementing a neural network in Keras for a given problem. Includes a a toy example implementation regarding sentiment analysis. Emphasis on dense, convolutional, and recurrent neural networks, with particular implementation focus on recurrent LSTM networks.'
-tags: computing
+tags: computation
 ---
 
 ## Table of Contents
