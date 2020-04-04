@@ -99,7 +99,7 @@ h2::before, h1::before, h3::before, h4::before, .anchor {
     pointer-events: none;
 }
 
-@media print, screen and (max-width: 480px) { 
+@media print, screen and (max-width: 520px) { 
     #header { margin-top: 0px; }
     section { margin-top: 60px; }
     nav { display: block; } 
@@ -111,9 +111,9 @@ h2::before, h1::before, h3::before, h4::before, .anchor {
         border-radius: 10px;
         margin: 3px; 
     }
-    #footer nav li a {
+    #footer nav li {
         display: block;
         text-align: center;
-        padding: 10px;
+        padding: 0px;
     }
 }
