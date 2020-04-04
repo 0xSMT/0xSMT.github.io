@@ -25,7 +25,7 @@
                 <p style="font-size: 16px; font-style: italic">Roughly <b>{{word_count}}</b> words</p>
 
                 <!-- Tags of post -->
-                <div style="text-align: center">{% for tag in page.tags %}
+                <div style="text-align: center; line-height: 2.5">{% for tag in page.tags %}
                     {% assign posttag = tag %}
                     <a href="{{site.basurl}}/tags/{{posttag}}" class="tagbox" style="font-size: 14px">{{posttag}}</a>
                 {% endfor %}</div>

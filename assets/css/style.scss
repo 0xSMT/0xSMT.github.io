@@ -63,6 +63,7 @@ section.content {
     padding-right: 10px; 
     border-radius: 10px;
     margin: 3px; 
+    margin-bottom: 30px;
 }
 
 #newpost {
@@ -89,12 +90,6 @@ ul ul {
     margin: 0 0 0 0;
 }
 
-@media print, screen and (max-width: 480px) { 
-  #header { margin-top: 0px; }
-  section { margin-top: 60px; }
-  nav { display: block; } 
-}
-
 h2::before, h1::before, h3::before, h4::before, .anchor { 
     display: block; 
     content: " "; 
@@ -102,4 +97,18 @@ h2::before, h1::before, h3::before, h4::before, .anchor {
     height: 80px; 
     visibility: hidden; 
     pointer-events: none;
+}
+
+@media print, screen and (max-width: 480px) { 
+    #header { margin-top: 0px; }
+    section { margin-top: 60px; }
+    nav { display: block; } 
+    .tagbox {
+        background: #151010; 
+        padding: 5px;
+        padding-left: 10px; 
+        padding-right: 10px; 
+        border-radius: 10px;
+        margin: 3px; 
+    }
 }
