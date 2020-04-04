@@ -111,4 +111,9 @@ h2::before, h1::before, h3::before, h4::before, .anchor {
         border-radius: 10px;
         margin: 3px; 
     }
+    #footer nav li a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
 }
