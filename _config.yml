@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Samuel Taylor's Personal Website
+title: 0xSMT
+display_title: Samuel Taylor's Personal Website
 email: 0xSMT97@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Computation, Psychology, Neuroscience, Linguistics, Literature
@@ -53,8 +54,3 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-# collections:
-#   articles:
-#     output: true
-#     permalink: /article/:title.html

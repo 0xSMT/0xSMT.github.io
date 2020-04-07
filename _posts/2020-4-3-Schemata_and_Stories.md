@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Schemata and Stories'
-date: 2020-04-03 16:58:13 -0500
-description: 'A reflection on how storytelling relate to psychology. What is meant by a "story" in the general sense? How do stories reflect our self-concept, and to a broader extent, our own cognition? How do stories shape us?'
+date: 2020-04-03 22:56:26 -0500
+description: 'A reflection on how storytelling relates to psychology. What is meant by a "story" in the general sense? How do stories reflect our self-concept, and to a broader extent, our own cognition? How do stories shape us?'
 tags: psychology literature
 references:
     - "Gottschall, Jonathan. (2012). <i>The Storytelling Animal: How Stories Make Us Human</i>. Boston: Houghton Mifflin Harcourt."
@@ -10,3 +10,4 @@ references:
     - "Kövecses, Zoltán. (2002). <i>Metaphor: A Practical Introduction</i>. Oxford: Oxford University Press."
 ---
 
+Stories are tied to human history -- in fact, human history itself is but a collection of complex stories, interconnecting to make an even more complex story of the human race. 
