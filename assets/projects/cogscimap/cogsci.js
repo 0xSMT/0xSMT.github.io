@@ -43,6 +43,94 @@ function preprocess(data) {
     return transform(data, "next")
 }
 
+function connectingEdges(id) {
+    return d3.selectAll("line")
+        .filter(function(link) {
+            return link.source.id == id || link.target.id == id;
+        });
+}
+
+function nonconnectingEdges(id) {
+    return d3.selectAll("line")
+        .filter(function(link) {
+            return link.source.id != id && link.target.id != id;
+        });
+}
+
+function getCircle(id) {
+    return d3.selectAll("circle")
+        .filter(function(node) {
+            return node.id == id;
+        });
+}
+
+function notCircle(id) {
+    return d3.selectAll("circle")
+        .filter(function(node) {
+            return node.id != id;
+        });
+}
+
+function allEdges() {
+    return d3.selectAll("line");
+}
+
+function allNodes() {
+    return d3.selectAll("circle");
+}
+
+function fadeLines(elements) {
+    elements
+        .transition()
+        .duration(1500)
+            .style("stroke", "red")
+            .style("stroke-width", "3")
+            .style("opacity", 0.1);
+}
+
+function growLines(elements) {
+    elements
+        .transition()
+        .duration(1500)
+            .style("stroke", "red")
+            .style("stroke-width", "6")
+            .style("opacity", 1.0);
+}
+
+function growNodes(elements) {
+    elements
+        .transition()
+        .duration(1500)
+            .attr("r", radius * 2)
+            .style("opacity", 1.0);
+}
+
+function resetLines(elements) {
+    elements
+        .transition()
+        .duration(1500)
+            .style("stroke", "red")
+            .style("stroke-width", "3")
+            .style("opacity", 1.0);
+}
+
+function resetNodes(elements) {
+    elements
+        .transition()
+        .duration(1500)
+            .attr("r", radius)
+            .style("opacity", 1.0);
+}
+
+// function fadeNodes(elements) {
+//     elements
+//         .transition()
+//         .duration(1500)
+//             .attr("r", radius)
+//             .style("opacity", );
+// }
+
+
 // let circle = null;
 function clickedNode(d) {
     var x, y, k;
@@ -53,44 +141,36 @@ function clickedNode(d) {
         k = 4;
 
         if(focus != null) {
-            d3.selectAll("circle")
-                .filter(function(node) {
-                    return node.id == focus.id;
-                })
-                .transition()
-                    .duration(1500)
-                    .attr("r", radius);
-            d3.selectAll("line")
-                .filter(function(link) {
-                    return link.source.id == focus.id || link.target.id == focus.id;
-                })
-                .transition()
-                    .duration(1500)
-                    .style("stroke-width", "3")
-                    .style("stroke", "red");
+            // getCircle(focus.id)
+            //     .transition()
+            //         .duration(1500)
+            //         .attr("r", radius);
+            // connectingEdges(focus.id)
+            //     .transition()
+            //         .duration(1500)
+            //         .style("stroke-width", "3")
+            //         .style("stroke", "red");
+            resetNodes(getCircle(focus.id));
+            resetLines(connectingEdges(focus.id));
         }
 
         focus = d;
         // circle = this;
 
-        d3.selectAll("line")
-            .filter(function(link) {
-                // console.log(link.source)
-                return link.source.id == focus.id || link.target.id == focus.id;
-            })
-            .raise()
-            .transition()
-                .duration(1500)
-                .style("stroke-width", "6")
-                .style("stroke", "blue");
+        // connectingEdges(focus.id)
+        //     .raise()
+        //     .transition()
+        //         .duration(1500)
+        //         .style("stroke-width", "6")
+        //         .style("stroke", "blue");
+        growLines(connectingEdges(focus.id));
+        fadeLines(nonconnectingEdges(focus.id));
+        growNodes(getCircle(focus.id));
 
-        d3.selectAll("circle")
-            .filter(function(node) {
-                return node.id == focus.id;
-            })
-            .transition()
-                .duration(1500)
-                .attr("r", radius * 2);
+        // getCircle(focus.id)
+        //     .transition()
+        //         .duration(1500)
+        //         .attr("r", radius * 2);
         
         d3.selectAll("circle").raise();
     } else {
@@ -120,22 +200,19 @@ function clickedLine(d) {
             y = height / 2;
             k = 1;
 
-            d3.selectAll("circle")
-                .filter(function(node) {
-                    return node.id == focus.id;
-                })
-                .transition()
-                    .duration(1500)
-                    .attr("r", radius);
+            // getCircle(focus.id)
+            //     .transition()
+            //         .duration(1500)
+            //         .attr("r", radius);
 
-            d3.selectAll("line")
-                .filter(function(link) {
-                    return link.source.id == focus.id || link.target.id == focus.id;
-                })
-                .transition()
-                    .duration(1500)
-                    .style("stroke-width", "3")
-                    .style("stroke", "red");
+            // connectingEdges(focus.id)
+            //     .transition()
+            //         .duration(1500)
+            //         .style("stroke-width", "3")
+            //         .style("stroke", "red");
+            resetNodes(getCircle(focus.id));
+            resetLines(connectingEdges(focus.id));
+
             
             // circle = null;
             focus = null;
@@ -155,22 +232,18 @@ function clickedBackground(d) {
     y = height / 2;
     k = 1;
 
-    d3.selectAll("circle")
-        .filter(function(node) {
-            return node.id == focus.id;
-        })
-        .transition()
-            .duration(1500)
-            .attr("r", radius);
+    // getCircle(focus.id)
+    //     .transition()
+    //         .duration(1500)
+    //         .attr("r", radius);
 
-    d3.selectAll("line")
-        .filter(function(link) {
-            return link.source.id == focus.id || link.target.id == focus.id;
-        })
-        .transition()
-            .duration(1500)
-            .style("stroke-width", "3")
-            .style("stroke", "red");
+    // connectingEdges(focus.id)
+    //     .transition()
+    //         .duration(1500)
+    //         .style("stroke-width", "3")
+    //         .style("stroke", "red");
+    resetNodes(getCircle(focus.id));
+    resetLines(allEdges());
     
     // circle = null;
     focus = null;
@@ -283,7 +356,7 @@ function createGraph(graph) {
         .enter()
         .append("circle")
         .attr("r", radius)
-        .style("stroke", "yellow")
+        .style("stroke", "gold")
         .style("stroke-width", "3")
         .style("fill", "black")
         .on("click", clickedNode)
