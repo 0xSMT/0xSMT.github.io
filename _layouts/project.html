@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    {% include head.html %}
+
+    {% for load in page.js_load_pre %}
+        <script type="text/javascript" src='{{load}}'></script>
+    {% endfor %}
+
+    {% for load in page.csss_load %}
+        <link rel="stylesheet" href='{{load}}'></link>
+    {% endfor %}
+</head>
+
+<body style="padding: 0">
+    <!-- {% include nav.html %} -->
+
+    {{ content }}
+
+    <!-- {% include footer.html %} -->
+
+    <!-- {% include google_analytics.html %} -->
+
+    {% for load in page.js_load_post %}
+        <script type="text/javascript" src='{{load}}'></script>
+    {% endfor %}
+</body>
+
+</html>

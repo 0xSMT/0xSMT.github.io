@@ -3,6 +3,9 @@ title: Home
 layout: home
 ---
 
+### "If you can't give me poetry, can't you give me poetical science?" 
+#### Ada Lovelace
+
 # Welcome to my Website!
 
 Welcome to my website! This will serve as a centralized repository of anything I create that's worth recording and saving. I will be publishing a variety of material on this website, in an effort to improve my own abilities as a scholar, to have a time-stamped record of my academic progress, and as a contained location to reference any content I produce. I also have some nostalgia for the internet of the early 2000s, before internet giants monopolized the web, so this website serves as my own attempt to recapture that spirit of small, independent voices.

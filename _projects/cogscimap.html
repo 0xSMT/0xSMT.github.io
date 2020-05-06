@@ -1,0 +1,36 @@
+---
+title: Cognitive Science Map
+layout: project
+description: A map of cognitive science topics. A summary of each topic, posts about that topic, and related topics can be found via this interactive network graph.
+
+js_load_pre: 
+    - /assets/js/d3.min.js 
+
+js_load_post:
+    - /assets/projects/cogscimap/data.js 
+    - /assets/projects/cogscimap/cogsci.js
+---
+<style>
+div.infobox {	
+    position: absolute;			
+    text-align: center;
+    line-height: 28px;			
+    /* width: 60px;					 */
+    /* height: 28px;					 */
+    padding: 2px;				
+    font: 24px sans-serif;
+    font-weight: bold;		
+    background: darkred;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+div.infobox span {
+    display: inline-block;
+    vertical-align: middle;
+    /* height: 100%; */
+    /* line-height: normal; */
+}
+</style>
+
+<div id="graph" style="width: 100%; height: 100%;"></div>

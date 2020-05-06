@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include nav.html %}
+
+    <div class="wrapper">
+        <section>
+            <div id="title">
+                <h1>{{ page.title | default: site.github.repository_name }}</h1>
+                <p>{{ page.description | default: site.github.project_tagline }}</p>
+                <hr>
+            </div>
+
+            <!-- For each published post -->
+            {% for project in site.projects %}
+                <div>
+                    {% include projectbox.html %}
+                    
+                    <hr>
+                </div>
+            {% endfor %}
+            
+        </section>
+    </div>
+
+    {% include footer.html %}
+
+    {% include google_analytics.html %}
+</body>
+
+</html>
