@@ -289,7 +289,8 @@
     "Bayes": {
         "next": [
             "Computer Science",
-            "Probability"
+            "Probability",
+            "Mathematics"
         ],
         "posts": [
 
@@ -301,7 +302,8 @@
     },
     "Probability": {
         "next": [
-            "Computer Science"
+            "Computer Science",
+            "Mathematics"
         ],
         "posts": [
 
@@ -313,6 +315,7 @@
     },
     "Prime Numbers": {
         "next": [
+            "Mathematics",
             "Computer Science"
         ],
         "posts": [
@@ -684,7 +687,8 @@
         "next": [
             "Computer Science",
             "Lambda Calculus",
-            "Abstraction"
+            "Abstraction",
+            "Mathematics"
         ],
         "posts": [
 
@@ -975,6 +979,158 @@
             "Psychology",
             "Evolution",
             "Metacognition"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Grammar": {
+        "next": [
+            "Linguistics",
+            "Proof",
+            "Syntax",
+            "Computer Science"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Automata": {
+        "next": [
+            "Computer Science",
+            "Grammar",
+            "Syntax",
+            "Parsing",
+            "Turing Machine"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Reflection": {
+        "next": [
+            "Computer Science",
+            "Automatic Programming",
+            "Metacognition",
+            "Program",
+            "Source Code"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Environment": {
+        "next": [
+            "Reinforcement Learning",
+            "Nature-Nurture Problem",
+            "Active Inference",
+            "State",
+            "Search"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Nature-Nurture Problem": {
+        "next": [
+            "Psychology",
+            "Evolution",
+            "Mind"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Cybernetics": {
+        "next": [
+            "Artificial Intelligence",
+            "Mind",
+            "Information Theory",
+            "Communication",
+            "Feedback Loop",
+            "Control Theory"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Feedback Loop": {
+        "next": [
+            "Recursion",
+            "Computer Science",
+            "Psychology",
+            "Reward",
+            "Control Theory"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Control Theory": {
+        "next": [
+            "Computer Science",
+            "Robotics",
+            "Dynamical Systems",
+            "Cybernetics",
+            "Policy"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Dynamical Systems": {
+        "next": [
+            "Mathematics",
+            "Robotics",
+            "State"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Mathematics": {
+        "next": [
+            "Computer Science"
         ],
         "posts": [
 

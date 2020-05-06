@@ -163,15 +163,17 @@ function clickedNode(d) {
         //         .duration(1500)
         //         .style("stroke-width", "6")
         //         .style("stroke", "blue");
-        growLines(connectingEdges(focus.id));
         fadeLines(nonconnectingEdges(focus.id));
+        growLines(connectingEdges(focus.id));
         growNodes(getCircle(focus.id));
+        
 
         // getCircle(focus.id)
         //     .transition()
         //         .duration(1500)
         //         .attr("r", radius * 2);
         
+        connectingEdges(focus.id).raise();
         d3.selectAll("circle").raise();
     } else {
         popupModal(d);
@@ -242,7 +244,7 @@ function clickedBackground(d) {
     //         .duration(1500)
     //         .style("stroke-width", "3")
     //         .style("stroke", "red");
-    resetNodes(getCircle(focus.id));
+    resetNodes(allNodes());
     resetLines(allEdges());
     
     // circle = null;
