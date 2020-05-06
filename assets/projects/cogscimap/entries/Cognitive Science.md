@@ -2,8 +2,7 @@
 title: Cognitive Science
 layout: cogsci-card
 references:
-    - 
-    - 
+    - "Gardner, H. (1985). The mind's new science: A history of the cognitive revolution. Basic Books."
     - 
 ---
 

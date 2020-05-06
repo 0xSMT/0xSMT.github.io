@@ -8,7 +8,7 @@ function makeBirectional(graph, nextkey) {
                     graph[next][nextkey].push(key);
                 } 
             } catch(err) {
-                console.log("ERROR with graph[" + next + "]\t" + err)
+                console.log("ERROR with graph[" + next + "]\t" + err);
             }
         });
     }
@@ -21,9 +21,9 @@ function transform(graph, nextkey) {
     };
 
     for (let [key, value] of Object.entries(graph)) {false
-        data.nodes.push(value)
-        data.nodes[data.nodes.length - 1].id = key
-        data.nodes[data.nodes.length - 1].name = key
+        data.nodes.push(value);
+        data.nodes[data.nodes.length - 1].id = key;
+        data.nodes[data.nodes.length - 1].name = key;
 
         value[nextkey].forEach(next => {
             if(graph[next][nextkey].includes(key) == true && !data.links.some(link => link.source == next && link.target == key)) {
@@ -39,8 +39,8 @@ function transform(graph, nextkey) {
 }
 
 function preprocess(data) {
-    makeBirectional(data, "next")
-    return transform(data, "next")
+    makeBirectional(data, "next");
+    return transform(data, "next");
 }
 
 function connectingEdges(id) {
@@ -79,45 +79,52 @@ function allNodes() {
     return d3.selectAll("circle");
 }
 
-function fadeLines(elements) {
+function fadeLines(elements, duration=1500) {
     elements
         .transition()
-        .duration(1500)
+        .duration(duration)
             .style("stroke", "red")
             .style("stroke-width", "3")
             .style("opacity", 0.1);
 }
 
-function growLines(elements) {
+function fadeNodes(elements, duration=1500) {
     elements
         .transition()
-        .duration(1500)
+        .duration(duration)
+            .style("opacity", 0.1);
+}
+
+function growLines(elements, duration=1500) {
+    elements
+        .transition()
+        .duration(duration)
             .style("stroke", "red")
             .style("stroke-width", "6")
             .style("opacity", 1.0);
 }
 
-function growNodes(elements) {
+function growNodes(elements, duration=1500) {
     elements
         .transition()
-        .duration(1500)
+        .duration(duration)
             .attr("r", radius * 2)
             .style("opacity", 1.0);
 }
 
-function resetLines(elements) {
+function resetLines(elements, duration=1500) {
     elements
         .transition()
-        .duration(1500)
+        .duration(duration)
             .style("stroke", "red")
             .style("stroke-width", "3")
             .style("opacity", 1.0);
 }
 
-function resetNodes(elements) {
+function resetNodes(elements, duration=1500) {
     elements
         .transition()
-        .duration(1500)
+        .duration(duration)
             .attr("r", radius)
             .style("opacity", 1.0);
 }
@@ -130,8 +137,8 @@ function clickedNode(d) {
     var x, y, k;
   
     if (focus !== d) {
-        x = d.x
-        y = d.y
+        x = d.x;
+        y = d.y;
         k = 4;
 
         if(focus != null) {
@@ -213,10 +220,19 @@ function clickedBackground(d) {
 
 function mouseoverNode(d) {
     putHover(d.id, d3.event.pageX, d3.event.pageY);
+
+    if (focus == null) {
+        fadeLines(nonconnectingEdges(d.id), 300);
+    }
 }
 
 function mouseoutNode(d) {
     hideHover();
+
+    // resetNodes(getCircle(d.id));
+    if (focus == null) {
+        resetLines(nonconnectingEdges(d.id), 300);
+    }
 }
 
 function mousemoveNode(d) {
@@ -227,8 +243,6 @@ function mouseoverLine(d) {
     if(focus != null) {
         if(d.source.id == focus.id) {
             putHover(d.target.id, d3.event.pageX, d3.event.pageY);
-
-            
         } else if(d.target.id == focus.id) {
             putHover(d.source.id, d3.event.pageX, d3.event.pageY);
         }
@@ -251,7 +265,7 @@ function mousemoveLine(d) {
 
 function popupModal(node) {
     console.log(node);
-    console.log(data)
+    console.log(data);
 }
 
 let graphDiv = "graph";
@@ -291,7 +305,7 @@ var focus = null;
 let data = null;
 
 function createGraph(graph) {
-    data = preprocess(graph)
+    data = preprocess(graph);
 
     // Initialize the links
     var link = g
