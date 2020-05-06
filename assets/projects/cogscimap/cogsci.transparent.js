@@ -62,12 +62,13 @@ function clickedNode(d) {
                     .attr("r", radius);
             d3.selectAll("line")
                 .filter(function(link) {
-                    return link.source.id == focus.id || link.target.id == focus.id;
+                    return link.source.id != focus.id && link.target.id != focus.id;
                 })
                 .transition()
                     .duration(1500)
+                    .style("stroke", "red")
                     .style("stroke-width", "3")
-                    .style("stroke", "red");
+                    .style("opacity", 1.0);
         }
 
         focus = d;
@@ -76,13 +77,14 @@ function clickedNode(d) {
         d3.selectAll("line")
             .filter(function(link) {
                 // console.log(link.source)
-                return link.source.id == focus.id || link.target.id == focus.id;
+                return link.source.id != focus.id && link.target.id != focus.id;
             })
             .raise()
             .transition()
                 .duration(1500)
-                .style("stroke-width", "6")
-                .style("stroke", "blue");
+                .style("stroke", "red")
+                .style("stroke-width", "3")
+                .style("opacity", 0.1);
 
         d3.selectAll("circle")
             .filter(function(node) {
@@ -130,12 +132,13 @@ function clickedLine(d) {
 
             d3.selectAll("line")
                 .filter(function(link) {
-                    return link.source.id == focus.id || link.target.id == focus.id;
+                    return link.source.id != focus.id && link.target.id != focus.id;
                 })
                 .transition()
                     .duration(1500)
                     .style("stroke-width", "3")
-                    .style("stroke", "red");
+                    .style("stroke", "red")
+                    .style("opacity", 1.0);
             
             // circle = null;
             focus = null;
@@ -165,12 +168,13 @@ function clickedBackground(d) {
 
     d3.selectAll("line")
         .filter(function(link) {
-            return link.source.id == focus.id || link.target.id == focus.id;
+            return link.source.id != focus.id && link.target.id != focus.id;
         })
         .transition()
             .duration(1500)
             .style("stroke-width", "3")
-            .style("stroke", "red");
+            .style("stroke", "red")
+            .style("opacity", 1.0);
     
     // circle = null;
     focus = null;

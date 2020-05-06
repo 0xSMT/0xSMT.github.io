@@ -72,7 +72,8 @@
     "Schema": {
         "next": [
             "Psychology",
-            "Computer Science"
+            "Computer Science",
+            "Graph Theory"
         ],
         "posts": [
 
@@ -212,7 +213,8 @@
         "next": [
             "Computer Science",
             "Syntax",
-            "Semantics"
+            "Semantics",
+            "Linguistics"
         ],
         "posts": [
 
@@ -224,7 +226,7 @@
     },
     "Syntax": {
         "next": [
-
+            "Linguistics"
         ],
         "posts": [
 
@@ -236,7 +238,7 @@
     },
     "Language": {
         "next": [
-
+            "Linguistics"
         ],
         "posts": [
 
@@ -248,7 +250,8 @@
     },
     "Semantic Primitives": {
         "next": [
-            "Prime Numbers"
+            "Prime Numbers",
+            "Linguistics"
         ],
         "posts": [
 
@@ -260,8 +263,7 @@
     },
     "Denotational Semantics": {
         "next": [
-            "Psychology",
-            "Computer Science"
+            "Programming Language"
         ],
         "posts": [
 
@@ -273,7 +275,8 @@
     },
     "Distributional Semantics": {
         "next": [
-            "Probability"
+            "Probability",
+            "Linguistics"
         ],
         "posts": [
 
@@ -430,7 +433,8 @@
     },
     "Stochastic Process": {
         "next": [
-            "Probability"
+            "Probability",
+            "Markov Decision Process"
         ],
         "posts": [
 
@@ -473,7 +477,8 @@
     "Analogy": {
         "next": [
             "Metaphor",
-            "Psychology"
+            "Psychology",
+            "Linguistics"
         ],
         "posts": [
 
@@ -868,6 +873,114 @@
         ],
         "references": [
 
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Proof": {
+        "next": [
+            "Logic",
+            "Induction",
+            "Deduction",
+            "Syntax",
+            "Curry-Howard Isomorphism"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Logic": {
+        "next": [
+            "Computer Science",
+            "Deduction",
+            "Induction",
+            "Linguistics",
+            "Semantics"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Curry-Howard Isomorphism": {
+        "next": [
+            "Lambda Calculus",
+            "Proof",
+            "Currying"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Mind": {
+        "next": [
+            "Psychology",
+            "Mind-Body Problem",
+            "Brain",
+            "Intelligence",
+            "Computer"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Computer": {
+        "next": [
+            "Computer Science",
+            "Programming Language"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Program": {
+        "next": [
+            "Computer Science",
+            "Programming Language",
+            "Robotics",
+            "Algorithm",
+            "Source Code",
+            "Turing Machine",
+            "Automatic Programming",
+            "Evolutionary Programming"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
+        ],
+        "description": "DESCRIPTION"
+    },
+    "Cognitive Biases": {
+        "next": [
+            "Psychology",
+            "Evolution",
+            "Metacognition"
+        ],
+        "posts": [
+
+        ],
+        "references": [
+            
         ],
         "description": "DESCRIPTION"
     }
