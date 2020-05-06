@@ -5,54 +5,19 @@
             "Neuroscience",
             "Linguistics",
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "Cognitive science is the multidisciplinary study of the mind. The mind has been examined from the perspective of many fields, with each field representing the mind with different levels of abstraction, methods, and tools. The aim of cognitive science is to use these tools collectively to obtain an improved and more holistic understanding of the mind."
+        ]
     },
     "Psychology": {
-        "next": [],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "PSYCHLOGY DESCRIPTION"
+        "next": []
     },
     "Neuroscience": {
-        "next": [],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "NEUROSCIENCE DESCRIPTION"
+        "next": []
     },
     "Computer Science": {
-        "next": [],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "COMPUTER SCIENCE DESCRIPTION"
+        "next": []
     },
     "Linguistics": {
-        "next": [],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "LINGUISTICS DESCRIPTION"
+        "next": []
     },
     "Semantics": {
         "next": [
@@ -60,114 +25,52 @@
             "Semantic Primitives",
             "Denotational Semantics",
             "Distributional Semantics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "Semantics DESCRIPTION"
+        ]
     },
     "Schema": {
         "next": [
             "Psychology",
             "Computer Science",
             "Graph Theory"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Memory": {
         "next": [
             "Psychology",
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Mind-Body Problem": {
         "next": [
             "Psychology"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Neuron": {
         "next": [
             "Neuroscience"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Active Inference": {
         "next": [
             "Neuroscience",
-            "Bayes"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+            "Bayes",
+            "Reinforcement Learning"
+        ]
     },
     "Recursion": {
         "next": [
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Algorithm": {
         "next": [
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Source Code": {
         "next": [
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Programming Language": {
         "next": [
@@ -175,39 +78,18 @@
             "Semantics",
             "Syntax",
             "Language"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Robotics": {
         "next": [
             "Computer Science",
             "Mind-Body Problem"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Automatic Programming": {
         "next": [
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Parsing": {
         "next": [
@@ -215,191 +97,86 @@
             "Syntax",
             "Semantics",
             "Linguistics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Syntax": {
         "next": [
             "Linguistics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Language": {
         "next": [
             "Linguistics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Semantic Primitives": {
         "next": [
             "Prime Numbers",
             "Linguistics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Denotational Semantics": {
         "next": [
             "Programming Language"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Distributional Semantics": {
         "next": [
             "Probability",
             "Linguistics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Bayes": {
         "next": [
             "Computer Science",
             "Probability",
             "Mathematics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Probability": {
         "next": [
             "Computer Science",
             "Mathematics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Prime Numbers": {
         "next": [
             "Mathematics",
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Reinforcement Learning": {
         "next": [
             "State",
             "Reward",
             "Markov Decision Process"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Markov Decision Process": {
         "next": [
             "Probability",
             "Graph Theory"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "State": {
         "next": [
             
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Dopamine": {
         "next": [
             "Neuroscience"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Reward": {
         "next": [
             "Dopamine"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Graph Theory": {
         "next": [
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Lambda Calculus": {
         "next": [
@@ -411,41 +188,20 @@
             "Turing Machine",
             "Computer Science",
             "Linguistics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Turing Machine": {
         "next": [
             "Computer Science",
             "Lambda Calculus",
             "Algorithm"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Stochastic Process": {
         "next": [
             "Probability",
             "Markov Decision Process"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Evolution": {
         "next": [
@@ -454,219 +210,107 @@
             "Neuroscience",
             "Stochastic Process",
             "Creativity"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Metaphor": {
         "next": [
             "Language",
             "Semantics",
             "Analogy"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Analogy": {
         "next": [
             "Metaphor",
             "Psychology",
             "Linguistics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Induction": {
         "next": [
             "Computer Science",
             "Psychology",
             "Deduction"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Deduction": {
         "next": [
             "Computer Science",
             "Psychology",
             "Induction"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Creativity": {
         "next": [
             "Psychology",
             "Induction"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Self-Schema": {
         "next": [
             "Schema",
             "Recursion",
             "Active Inference"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Functionalism": {
         "next": [
             "Psychology",
             "Evolution"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Behaviorism": {
         "next": [
             "Psychology",
             "Reward"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Learning": {
         "next": [
             "Psychology",
             "Neuroscience",
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Communication": {
         "next": [
             "Information Theory",
             "Language",
             "Semantics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Information Theory": {
         "next": [
             "Computer Science",
             "Probability"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Category": {
         "next": [
             "Psychology",
             "Syntax",
             "Learning"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Brain": {
         "next": [
             "Neuroscience",
             "Psychology"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Metacognition": {
         "next": [
             "Computer Science",
             "Psychology",
             "Recursion"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Attention": {
         "next": [
             "Computer Science",
             "Psychology",
             "Neuroscience"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Heuristic": {
         "next": [
@@ -674,14 +318,7 @@
             "Computer Science",
             "Function",
             "Induction"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Function": {
         "next": [
@@ -689,55 +326,27 @@
             "Lambda Calculus",
             "Abstraction",
             "Mathematics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Currying": {
         "next": [
             "Lambda Calculus",
             "Abstraction"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Abstraction": {
         "next": [
             "Computer Science",
             "Source Code",
             "Semantics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Intelligence": {
         "next": [
             "Psychology",
             "Neuroscience",
             "Artificial Intelligence"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Artificial Intelligence": {
         "next": [
@@ -745,28 +354,14 @@
             "Bayes",
             "Learning",
             "Reinforcement Learning"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Neural Network": {
         "next": [
             "Artificial Neural Network",
             "Neuroscience",
             "Neuron"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Artificial Neural Network": {
         "next": [
@@ -776,27 +371,13 @@
             "Algorithm",
             "Activation",
             "Graph Theory"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Activation": {
         "next": [
             "Neuron",
             "Artificial Neural Network"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Reflex": {
         "next": [
@@ -804,81 +385,39 @@
             "State",
             "Action",
             "Neuron"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Action": {
         "next": [
             "Reinforcement Learning"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Policy": {
         "next": [
             "Reinforcement Learning",
             "Action",
             "State"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Program Synthesis": {
         "next": [
             "Automatic Programming",
             "Source Code"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Evolutionary Programming": {
         "next": [
             "Automatic Programming",
             "Evolution",
             "Source Code"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Search": {
         "next": [
             "Algorithm",
             "State",
             "Psychology"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Proof": {
         "next": [
@@ -887,14 +426,7 @@
             "Deduction",
             "Syntax",
             "Curry-Howard Isomorphism"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Logic": {
         "next": [
@@ -903,28 +435,14 @@
             "Induction",
             "Linguistics",
             "Semantics"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Curry-Howard Isomorphism": {
         "next": [
             "Lambda Calculus",
             "Proof",
             "Currying"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Mind": {
         "next": [
@@ -933,27 +451,13 @@
             "Brain",
             "Intelligence",
             "Computer"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Computer": {
         "next": [
             "Computer Science",
             "Programming Language"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Program": {
         "next": [
@@ -965,28 +469,14 @@
             "Turing Machine",
             "Automatic Programming",
             "Evolutionary Programming"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Cognitive Biases": {
         "next": [
             "Psychology",
             "Evolution",
             "Metacognition"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Grammar": {
         "next": [
@@ -994,14 +484,7 @@
             "Proof",
             "Syntax",
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Automata": {
         "next": [
@@ -1010,14 +493,7 @@
             "Syntax",
             "Parsing",
             "Turing Machine"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Reflection": {
         "next": [
@@ -1026,14 +502,7 @@
             "Metacognition",
             "Program",
             "Source Code"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Environment": {
         "next": [
@@ -1042,28 +511,14 @@
             "Active Inference",
             "State",
             "Search"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Nature-Nurture Problem": {
         "next": [
             "Psychology",
             "Evolution",
             "Mind"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Cybernetics": {
         "next": [
@@ -1073,14 +528,7 @@
             "Communication",
             "Feedback Loop",
             "Control Theory"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Feedback Loop": {
         "next": [
@@ -1089,14 +537,7 @@
             "Psychology",
             "Reward",
             "Control Theory"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Control Theory": {
         "next": [
@@ -1105,39 +546,18 @@
             "Dynamical Systems",
             "Cybernetics",
             "Policy"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Dynamical Systems": {
         "next": [
             "Mathematics",
             "Robotics",
             "State"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     },
     "Mathematics": {
         "next": [
             "Computer Science"
-        ],
-        "posts": [
-
-        ],
-        "references": [
-            
-        ],
-        "description": "DESCRIPTION"
+        ]
     }
 }

@@ -122,17 +122,11 @@ function resetNodes(elements) {
             .style("opacity", 1.0);
 }
 
-// function fadeNodes(elements) {
-//     elements
-//         .transition()
-//         .duration(1500)
-//             .attr("r", radius)
-//             .style("opacity", );
-// }
-
-
-// let circle = null;
 function clickedNode(d) {
+    if(info) {
+        hideInfo();
+    }
+
     var x, y, k;
   
     if (focus !== d) {
@@ -141,48 +135,24 @@ function clickedNode(d) {
         k = 4;
 
         if(focus != null) {
-            // getCircle(focus.id)
-            //     .transition()
-            //         .duration(1500)
-            //         .attr("r", radius);
-            // connectingEdges(focus.id)
-            //     .transition()
-            //         .duration(1500)
-            //         .style("stroke-width", "3")
-            //         .style("stroke", "red");
             resetNodes(getCircle(focus.id));
             resetLines(connectingEdges(focus.id));
         }
 
         focus = d;
-        // circle = this;
 
-        // connectingEdges(focus.id)
-        //     .raise()
-        //     .transition()
-        //         .duration(1500)
-        //         .style("stroke-width", "6")
-        //         .style("stroke", "blue");
         fadeLines(nonconnectingEdges(focus.id));
         growLines(connectingEdges(focus.id));
         growNodes(getCircle(focus.id));
-        
-
-        // getCircle(focus.id)
-        //     .transition()
-        //         .duration(1500)
-        //         .attr("r", radius * 2);
-        
         connectingEdges(focus.id).raise();
+
         d3.selectAll("circle").raise();
     } else {
-        popupModal(d);
+        putInfo(focus);
+        // popupModal(d);
         return;
     }
-  
-    // g.selectAll("circle")
-        // .classed("active", focus && function(d) { return d === focus; });
-  
+
     g.transition()
         .duration(750)
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
@@ -190,6 +160,10 @@ function clickedNode(d) {
 }
 
 function clickedLine(d) {
+    if(info) {
+        hideInfo();
+    }
+
     if(focus != null) {
         if(d.source.id == focus.id) {
             clickedNode(d.target);
@@ -202,21 +176,9 @@ function clickedLine(d) {
             y = height / 2;
             k = 1;
 
-            // getCircle(focus.id)
-            //     .transition()
-            //         .duration(1500)
-            //         .attr("r", radius);
-
-            // connectingEdges(focus.id)
-            //     .transition()
-            //         .duration(1500)
-            //         .style("stroke-width", "3")
-            //         .style("stroke", "red");
             resetNodes(getCircle(focus.id));
             resetLines(allEdges(focus.id));
 
-            
-            // circle = null;
             focus = null;
 
             g.transition()
@@ -228,32 +190,25 @@ function clickedLine(d) {
 }
 
 function clickedBackground(d) {
-    var x, y, k;
+    if(info) {
+        hideInfo();
+    } else {
+        var x, y, k;
 
-    x = width / 2;
-    y = height / 2;
-    k = 1;
+        x = width / 2;
+        y = height / 2;
+        k = 1;
 
-    // getCircle(focus.id)
-    //     .transition()
-    //         .duration(1500)
-    //         .attr("r", radius);
+        resetNodes(allNodes());
+        resetLines(allEdges());
+        
+        focus = null;
 
-    // connectingEdges(focus.id)
-    //     .transition()
-    //         .duration(1500)
-    //         .style("stroke-width", "3")
-    //         .style("stroke", "red");
-    resetNodes(allNodes());
-    resetLines(allEdges());
-    
-    // circle = null;
-    focus = null;
-
-    g.transition()
-        .duration(750)
-        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
-        .style("stroke-width", 1.5 / k + "px");
+        g.transition()
+            .duration(750)
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+            .style("stroke-width", 1.5 / k + "px");
+    }
 }
 
 function mouseoverNode(d) {
@@ -418,19 +373,9 @@ document.onkeydown = function(event) {
     }
 }
 
-var infobox = d3.select("body").append("div")	
-    .attr("class", "infobox")
-    // .style("opacity", 0)
-    .style("opacity", 0.0)
-    .style("left", 0)
-    .style("top", 0);
-
-var hoverbox = d3.select("body").append("div")	
-    .attr("class", "hoverbox")
-    // .style("opacity", 0);
-    .style("opacity", 0.0)
-    .style("left", 0)
-    .style("top", 0);
+var infobox = d3.select(".infobox");
+var hoverbox = d3.select(".hoverbox");
+var info = false;
 
 // -- INFO BOX ----------------------------
 
@@ -441,10 +386,10 @@ function hideHover() {
 }
 
 function putHover(text, x, y) {
+    hoverbox.style("z-index", 10);
     hoverbox.transition()
         .duration(50)
-        .style("opacity", 1.0)
-        .style("z-index", 10);
+        .style("opacity", 1.0);
     hoverbox.html("<span>" + text + "</span>");
         
     hoverbox.style("left", (x) + "px")
@@ -455,23 +400,42 @@ function putHover(text, x, y) {
 
 function hideInfo() {
     infobox.transition()
-        .duration(200)
-        .style("opacity", 0.0);
+        .duration(500)
+        .style("opacity", 0.0)
+        .style("z-index", -1);
+
+    
+    info = false;
 }
 
 function parseNode(node) {
-    let html = "";
-    
-    return html;
+    let path = '/assets/projects/cogscimap/entries/' + node.id + '.html';
+
+    var xhr= new XMLHttpRequest();
+    xhr.open('GET', path, true);
+    xhr.onreadystatechange = function() {
+        if (this.readyState !== 4) {
+            document.getElementById('infobox').innerHTML = this.readyState;
+            return;
+        }
+        if (this.status !== 200) {
+            document.getElementById('infobox').innerHTML = this.status;
+            return;
+        }
+        document.getElementById('infobox').innerHTML = this.responseText;
+
+    };
+    xhr.send();
+    // return '<iframe src="/assets/projects/cogscimap/entries/' + node.id + '.html">';    
 }
 
-function putInfo(node, x, y) {
+function putInfo(node) {
+    parseNode(node);
+    // infobox.html(parseNode(node));
+    infobox.style("z-index", 10);
+
     infobox.transition()
-        .duration(50)
-        .style("opacity", 1.0)
-        .style("z-index", 10);
-    infobox.html(parseNode(node));
-        
-    infobox.style("left", (x) + "px")
-        .style("top", (y - parseInt(infobox.style("height"))) + "px");
+        .duration(500)
+        .style("opacity", 1.0);
+    info = true;
 }

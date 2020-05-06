@@ -1,0 +1,38 @@
+<button class="infoclose" onclick="hideInfo()">X</button>
+<div class="wrapper" id="card-content" style="height: inherit;">
+    <section class="content" style="height: inherit; position: relative; text-align: center;">
+        <div id="title">
+            <!-- Name of article and date of publish -->
+            <h1>{{ page.title }}</h1>
+            <br>
+            <hr>
+        </div>
+        <div style='height: 100%; 
+                    overflow-y: auto; 
+                    width: 100%; 
+                    text-align: center; 
+                    padding-right: 3px; 
+                    background: #252020; 
+                    border: solid black;
+                    border-radius: 8px;
+                    font-size: 18px;'>
+            <div style="padding: 20px">
+                {{ content }}
+                
+                <hr>
+
+                <!-- References for topic, should they exist -->
+                {% if page.references.size > 0 %}
+                    <h1>References</h1>
+
+                    <ul>
+                        {% for ref in page.references %}
+                            <li>{{ref}}</li>
+                        {% endfor %}
+                    </ul>
+
+                {% endif %}
+            </div>
+        </div>
+    </section>
+</div>
