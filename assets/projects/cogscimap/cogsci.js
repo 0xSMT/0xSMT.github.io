@@ -211,7 +211,7 @@ function clickedLine(d) {
             //         .style("stroke-width", "3")
             //         .style("stroke", "red");
             resetNodes(getCircle(focus.id));
-            resetLines(connectingEdges(focus.id));
+            resetLines(allEdges(focus.id));
 
             
             // circle = null;
