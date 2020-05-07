@@ -559,5 +559,11 @@
         "next": [
             "Computer Science"
         ]
+    },
+    "Probabilistic Programming": {
+        "next": [
+            "Probability",
+            "Programming Language"
+        ]
     }
 }
