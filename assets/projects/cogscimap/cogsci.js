@@ -62,6 +62,7 @@ function getCircle(id) {
         .filter(function(node) {
             return node.id == id;
         });
+    // return d3.select("circle#" + id);
 }
 
 function notCircle(id) {
@@ -129,6 +130,12 @@ function resetNodes(elements, duration=1500) {
             .style("opacity", 1.0);
 }
 
+function findCircle(id) {
+    let s = "circle#" + id.replace(/\s/g, '');
+    console.log(s);
+    return d3.select(s)._groups[0][0].__data__;
+}
+
 function clickedNode(d) {
     if(info) {
         hideInfo();
@@ -147,16 +154,17 @@ function clickedNode(d) {
         }
 
         focus = d;
+        console.log(focus);
 
         fadeLines(nonconnectingEdges(focus.id));
         growLines(connectingEdges(focus.id));
-        growNodes(getCircle(focus.id));
+        growNodes(getCircle(focus.id), 1500);
         connectingEdges(focus.id).raise();
 
         d3.selectAll("circle").raise();
+        putInfo(focus);
     } else {
         putInfo(focus);
-        // popupModal(d);
         return;
     }
 
@@ -286,7 +294,14 @@ let radius = 15;
 var svg = d3.select("#" + graphDiv)
     .append("svg")
     .attr("width", width + margin.left + margin.right - frame)
-    .attr("height", height + margin.top + margin.bottom - frame);
+    .attr("height", height + margin.top + margin.bottom - frame)
+    .on("wheel", function(d){
+        // console.log(d3.event.wheelDelta );
+        // zoom out on scroll back
+        if (d3.event.wheelDelta < 0 && focus != null) {
+            clickedBackground();
+        }
+    });
 
 const g = svg
             .append("g")
@@ -327,6 +342,7 @@ function createGraph(graph) {
         .enter()
         .append("circle")
         .attr("r", radius)
+        .attr("id", d => d.id.replace(/\s/g, ''))
         .style("stroke", "gold")
         .style("stroke-width", "3")
         .style("fill", function(d) {
@@ -469,7 +485,6 @@ function fadeIntro() {
             .style("opacity", 0.0)
             .on("end", function() {
                 intro.style("z-index", -1);
-                // clickedNode(getCircle("Cognitive Science"));
+                // clickedNode(findCircle("Cognitive Science"));
             });
-    
 }   
