@@ -3,7 +3,6 @@ title: Cognitive Science
 layout: cogsci-card
 references:
     - "Gardner, H. (1985). The mind's new science: A history of the cognitive revolution. Basic Books."
-    - 
 ---
 
 Cognitive science is the multidisciplinary study of the mind. The mind has been examined from the perspective of many fields, with each field representing the mind with different levels of abstraction, methods, and tools. The aim of cognitive science is to use these tools collectively to obtain an improved and more holistic understanding of the mind.

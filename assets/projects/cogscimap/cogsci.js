@@ -135,7 +135,7 @@ function clickedNode(d) {
     }
 
     var x, y, k;
-  
+    
     if (focus !== d) {
         x = d.x;
         y = d.y;
@@ -161,7 +161,7 @@ function clickedNode(d) {
     }
 
     g.transition()
-        .duration(750)
+        .duration(400)
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
         .style("stroke-width", 1.5 / k + "px");
 }
@@ -189,7 +189,7 @@ function clickedLine(d) {
             focus = null;
 
             g.transition()
-                .duration(750)
+                .duration(400)
                 .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
                 .style("stroke-width", 1.5 / k + "px");
         }
@@ -212,7 +212,7 @@ function clickedBackground(d) {
         focus = null;
 
         g.transition()
-            .duration(750)
+            .duration(400)
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
             .style("stroke-width", 1.5 / k + "px");
     }
@@ -329,7 +329,13 @@ function createGraph(graph) {
         .attr("r", radius)
         .style("stroke", "gold")
         .style("stroke-width", "3")
-        .style("fill", "black")
+        .style("fill", function(d) {
+            if(d.id == "Cognitive Science") {
+                return "#555555";
+            } else {
+                return "black";
+            }
+        })
         .on("click", clickedNode)
         .on("mouseover", mouseoverNode)
         .on("mouseout", mouseoutNode)
@@ -391,7 +397,9 @@ var infobox = d3.select(".infobox");
 var hoverbox = d3.select(".hoverbox");
 var info = false;
 
-// -- INFO BOX ----------------------------
+var intro = d3.select(".ondisplay");
+
+// -- HOVER BOX ----------------------------
 
 function hideHover() {
     hoverbox.transition()
@@ -453,3 +461,15 @@ function putInfo(node) {
         .style("opacity", 1.0);
     info = true;
 }
+
+function fadeIntro() {
+    intro
+        .transition()
+            .duration(500)
+            .style("opacity", 0.0)
+            .on("end", function() {
+                intro.style("z-index", -1);
+                // clickedNode(getCircle("Cognitive Science"));
+            });
+    
+}   
