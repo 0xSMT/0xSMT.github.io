@@ -5,12 +5,10 @@ references:
     - 
 ---
 
-Mind description
+The mind is the abstract entity that forms the topic of conversation in cognitive science. The mind is a label for the ensemble of processes that leads to the emergence of cogntion (for that entity).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo bibendum tellus gravida luctus. Morbi sed tempus tortor, quis semper sem. Pellentesque at libero sed leo consequat luctus. Aliquam varius enim at erat tincidunt, at varius eros laoreet. Nulla facilisi. Phasellus tempor elit id tellus tincidunt, vitae laoreet justo lobortis. Nullam fermentum mauris id ipsum vestibulum venenatis. Aliquam vel vulputate metus. Nam luctus vulputate est quis fringilla. Etiam eu varius arcu.
+A mind ia very nebulous idea. A program can be said to have a mind, but certain not in the same capacity that a person is sadi to have one. A dog also possesses a mind, as might a hive of bees, or a social network of people. What characteristics unify these variants?
 
-Sed auctor, ipsum ut suscipit finibus, lectus sem vulputate purus, a ullamcorper lorem mauris id sem. Suspendisse potenti. Ut commodo, ipsum ut consequat tincidunt, ipsum elit facilisis magna, viverra maximus urna diam eget erat. Phasellus ultrices, ex eu auctor faucibus, turpis enim dapibus dolor, a sollicitudin mi turpis ac nisi. Vivamus et dui interdum, vestibulum massa nec, ornare ligula. Proin laoreet lacinia eros eu efficitur. Proin eros nisl, ullamcorper rhoncus lacinia pulvinar, hendrerit at ex. Fusce sodales euismod elit id molestie.
+A mind is a set of procedures that allows for making actions given a state, in the most general sense. It involves some degree (or perhaps entirely) amount of computation and reasoning to do so. A mind allows for adaptation, and can process information to use later (where information processing itself can be viewed as an action, and the arrival of message or information as a feature of a state).
 
-Nulla ullamcorper felis ac elit tempus, in ullamcorper libero pretium. Cras tempor orci magna, eget sodales dui consequat sed. Sed feugiat consectetur lectus, ut fermentum massa. Quisque quis facilisis sem. Duis at vulputate urna. Nulla gravida, eros consectetur viverra blandit, metus elit imperdiet nulla, id mattis purus leo in lectus. Donec magna tellus, porttitor in varius eget, porta tincidunt ex. Ut vel eros sed nisl eleifend facilisis sit amet id tortor. Proin auctor ligula at quam aliquet, at viverra sapien rhoncus. Cras laoreet congue ante, vitae aliquam sem. Quisque dictum tincidunt elementum.
-
-Maecenas diam velit, hendrerit et ex non, tristique blandit quam. Vestibulum aliquam libero sapien, ac pretium sem porttitor sed. Phasellus imperdiet urna non mattis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vehicula odio sed aliquam faucibus. Suspendisse placerat in nibh laoreet volutpat. Nam vitae feugiat dolor. Phasellus vulputate ultricies metus, at rutrum ex interdum a. In egestas neque in tortor volutpat hendrerit.
+A dead toad reacting to an electric pule is not said to have a mind -- this is a reflex, an electric circuit. A mind dismisses the behaviorist reductionism. This is not to say that a mind is not reducible. But a mind is not merely reflex -- it invovles some adaptation and computation beyond automatic response.  

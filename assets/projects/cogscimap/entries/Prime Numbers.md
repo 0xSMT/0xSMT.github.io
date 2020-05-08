@@ -5,12 +5,8 @@ references:
     - 
 ---
 
-Prime Numbers description
+Prime Numbers are natural numbers which are not evenly divisible other than by 1 and itself. So 2, 3, 5, 7, 11, and 31 are examples of prime numbers. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo bibendum tellus gravida luctus. Morbi sed tempus tortor, quis semper sem. Pellentesque at libero sed leo consequat luctus. Aliquam varius enim at erat tincidunt, at varius eros laoreet. Nulla facilisi. Phasellus tempor elit id tellus tincidunt, vitae laoreet justo lobortis. Nullam fermentum mauris id ipsum vestibulum venenatis. Aliquam vel vulputate metus. Nam luctus vulputate est quis fringilla. Etiam eu varius arcu.
+Prime numbers are important throughout computer science (due to their unique traits), but also possess a striking similarity (other than in name) to semantic primes. Rather than being fundamental units of language, prime numbers form the fundamental units of numbers. In fact, the Fundamental Theorem of Arithmetic is as follows:
 
-Sed auctor, ipsum ut suscipit finibus, lectus sem vulputate purus, a ullamcorper lorem mauris id sem. Suspendisse potenti. Ut commodo, ipsum ut consequat tincidunt, ipsum elit facilisis magna, viverra maximus urna diam eget erat. Phasellus ultrices, ex eu auctor faucibus, turpis enim dapibus dolor, a sollicitudin mi turpis ac nisi. Vivamus et dui interdum, vestibulum massa nec, ornare ligula. Proin laoreet lacinia eros eu efficitur. Proin eros nisl, ullamcorper rhoncus lacinia pulvinar, hendrerit at ex. Fusce sodales euismod elit id molestie.
-
-Nulla ullamcorper felis ac elit tempus, in ullamcorper libero pretium. Cras tempor orci magna, eget sodales dui consequat sed. Sed feugiat consectetur lectus, ut fermentum massa. Quisque quis facilisis sem. Duis at vulputate urna. Nulla gravida, eros consectetur viverra blandit, metus elit imperdiet nulla, id mattis purus leo in lectus. Donec magna tellus, porttitor in varius eget, porta tincidunt ex. Ut vel eros sed nisl eleifend facilisis sit amet id tortor. Proin auctor ligula at quam aliquet, at viverra sapien rhoncus. Cras laoreet congue ante, vitae aliquam sem. Quisque dictum tincidunt elementum.
-
-Maecenas diam velit, hendrerit et ex non, tristique blandit quam. Vestibulum aliquam libero sapien, ac pretium sem porttitor sed. Phasellus imperdiet urna non mattis malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vehicula odio sed aliquam faucibus. Suspendisse placerat in nibh laoreet volutpat. Nam vitae feugiat dolor. Phasellus vulputate ultricies metus, at rutrum ex interdum a. In egestas neque in tortor volutpat hendrerit.
+Every natural number (integer greater than 1) is either a prime number, or the finite product of prime numbers. In this sense, the set of prime numbers generates all numbers (greater than 1) via multiplication. No other set of numbers can accomplish this feat -- this is at minimum true because a prime number cannot be generated via nay other means other than through itself. What is extraordinary is every other number can be generated via the product of prime numbers.
